@@ -1,0 +1,105 @@
+{
+    "files": {
+        "api_client/__init__.py": {
+            "block_positions": [
+                {
+                    "end": 104, 
+                    "methods": [
+                        {
+                            "end": 104, 
+                            "name": "send_request", 
+                            "start": 39, 
+                            "type": "Function"
+                        }
+                    ], 
+                    "name": "ApiClient", 
+                    "start": 13, 
+                    "type": "Class"
+                }
+            ], 
+            "comments": 26, 
+            "language": "Python", 
+            "mccabe": 9, 
+            "ratio_comment_to_code": 0.29, 
+            "sloc": 89
+        }, 
+        "environment_options/__init__.py": {
+            "block_positions": [
+                {
+                    "end": 74, 
+                    "methods": [
+                        {
+                            "end": 74, 
+                            "name": "get_options", 
+                            "start": 24, 
+                            "type": "Function"
+                        }
+                    ], 
+                    "name": "EnvironmentOptions", 
+                    "start": 4, 
+                    "type": "Class"
+                }
+            ], 
+            "comments": 30, 
+            "language": "Python", 
+            "mccabe": 6, 
+            "ratio_comment_to_code": 0.52, 
+            "sloc": 58
+        }, 
+        "exceptions/__init__.py": {
+            "block_positions": [
+                {
+                    "end": 3, 
+                    "name": "DetailsMissingException", 
+                    "start": 1, 
+                    "type": "Class"
+                }
+            ], 
+            "comments": 5, 
+            "language": "Python", 
+            "mccabe": 0, 
+            "ratio_comment_to_code": 2.5, 
+            "sloc": 2
+        }, 
+        "launch_calm_blueprint.egg-info/SOURCES.txt": {
+            "block_positions": [], 
+            "comments": 0, 
+            "language": "Text only", 
+            "mccabe": 0, 
+            "ratio_comment_to_code": 0.0, 
+            "sloc": 0
+        }, 
+        "launch_calm_blueprint.egg-info/dependency_links.txt": {
+            "block_positions": [], 
+            "comments": 0, 
+            "language": "Text only", 
+            "mccabe": 0, 
+            "ratio_comment_to_code": 0.0, 
+            "sloc": 0
+        }, 
+        "launch_calm_blueprint.egg-info/requires.txt": {
+            "block_positions": [], 
+            "comments": 0, 
+            "language": "Text only", 
+            "mccabe": 0, 
+            "ratio_comment_to_code": 0.0, 
+            "sloc": 0
+        }, 
+        "launch_calm_blueprint.egg-info/top_level.txt": {
+            "block_positions": [], 
+            "comments": 0, 
+            "language": "Text only", 
+            "mccabe": 0, 
+            "ratio_comment_to_code": 0.0, 
+            "sloc": 0
+        }, 
+        "venv/pyvenv.cfg": {
+            "block_positions": [], 
+            "comments": 0, 
+            "language": "INI", 
+            "mccabe": 0, 
+            "ratio_comment_to_code": 0.0, 
+            "sloc": 3
+        }
+    }
+}
