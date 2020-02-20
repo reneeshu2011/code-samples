@@ -1,6 +1,5 @@
 '''
 use the Prism REST API v3 to create a simple VM
-requires on the mandatory fields i.e. VM name
 '''
 
 import requests
@@ -63,14 +62,19 @@ try:
     auth_header = f'Basic {encoded_credentials}'
 
     # setup the URL that will be used for the API request
-    url = f'https://{json_data["cluster_ip"]}:9440/api/nutanix/v3/vms'
+    url = f'https://{json_data["pc_ip"]}:9440/api/nutanix/v3/vms'
 
     # setup the JSON payload that will be used for this request
     payload = f'{{ \
                     "spec":{{ \
                         "name":"{json_data["""vm_name"""]}", \
                         "resources":{{ \
-                        }} \
+                        }}, \
+                        "cluster_reference":{{ \
+                            "kind":"cluster", \
+                            "name":"{json_data["""cluster_name"""]}", \
+                            "uuid":"{json_data["""cluster_uuid"""]}" \
+                        }}\
                     }}, \
                     "metadata":{{ \
                         "kind":"vm" \
@@ -96,7 +100,7 @@ try:
         if(response.ok):
             print(response.text)
         else:
-            print(f'An error occurred while connecting to {json_data["cluster_ip"]}.')
+            print(f'An error occurred while connecting to {json_data["pc_ip"]}.')
             '''
             the following line can be uncommented to show
             detailed error information
@@ -104,7 +108,7 @@ try:
             print(response.text)
     except Exception as ex:
         print(f'An {type(ex).__name__} exception occurred while \
-              connecting to {json_data["cluster_ip"]}.\nArgument: {ex.args}.')
+              connecting to {json_data["pc_ip"]}.\nArgument: {ex.args}.')
 
 except KeyError:
     print(f'{args.json} file does not appear to contain the required \
