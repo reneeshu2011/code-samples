@@ -1,0 +1,6 @@
+setup.py
+create_detailed_vm.egg-info/PKG-INFO
+create_detailed_vm.egg-info/SOURCES.txt
+create_detailed_vm.egg-info/dependency_links.txt
+create_detailed_vm.egg-info/requires.txt
+create_detailed_vm.egg-info/top_level.txt
